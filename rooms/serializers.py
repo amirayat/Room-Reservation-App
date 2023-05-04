@@ -14,7 +14,8 @@ class ReservationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Reservation
         fields = [
-            "date",
+            "from_date",
+            "to_date",
             "room",
         ]
 
@@ -33,20 +34,22 @@ class MakeReservationSerializer(serializers.ModelSerializer):
         return rooms
 
     def validate(self, attrs):
-        _date = attrs.get("date")
-        _room = attrs.get("room")
-        if not date.today() <= _date:
+        from_date = attrs.get("from_date")
+        to_date = attrs.get("to_date")
+        room = attrs.get("room")
+        if not date.today() <= from_date <= to_date:
             raise serializers.ValidationError(
-                "Invalid date for reservation.")
-        if _room not in self.all_rooms:
+                "Invalid range of date for reservation.")
+        if room not in self.all_rooms:
             raise serializers.ValidationError(
-                f"Invalid room {_room} - object does not exist.")
+                f"Invalid room {room} - object does not exist.")
         return super().validate(attrs)
 
     class Meta:
         model = Reservation
         fields = [
-            "date",
+            "from_date",
+            "to_date",
             "room",
             "reservationist",
             "phone"

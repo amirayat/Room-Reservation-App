@@ -22,7 +22,8 @@ class ReservationAPIView(CreateAPIView):
         if not isinstance(validated_data, list):
             validated_data = [validated_data]
         for data in validated_data:
-            date = data["date"]
+            from_date = data["from_date"]
+            to_date = data["to_date"]
             room_id = data["room"]
             reservationist = data["reservationist"]
             phone = data["phone"]
@@ -31,7 +32,8 @@ class ReservationAPIView(CreateAPIView):
                     room_id=room_id,
                     reservationist=reservationist,
                     phone=phone,
-                    date=date
+                    from_date=from_date,
+                    to_date=to_date
                 )
             )
         reservations = Reservation._default_manager.bulk_create(data_set)

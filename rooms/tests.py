@@ -30,7 +30,8 @@ class Test(TestCase):
 
     def test_reserve_single(self):
         data = {
-            "date": date.today().strftime('%Y-%m-%d'),
+            "from_date": date.today().strftime('%Y-%m-%d'),
+            "to_date": date.today().strftime('%Y-%m-%d'),
             "room": 1,
             "reservationist": "Dani",
             "phone": "09123456789"
@@ -43,7 +44,8 @@ class Test(TestCase):
 
     def test_reserve_bulk(self):
         data = [{
-            "date": date.today().strftime('%Y-%m-%d'),
+            "from_date": date.today().strftime('%Y-%m-%d'),
+            "to_date": date.today().strftime('%Y-%m-%d'),
             "room": room,
             "reservationist": "Dani",
             "phone": "09123456789"
