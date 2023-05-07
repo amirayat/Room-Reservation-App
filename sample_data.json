@@ -1,1 +1,104 @@
-[{"model": "rooms.room", "pk": 1, "fields": {"updated_at": "2023-05-04T20:45:38.685Z", "created_at": "2023-05-04T20:45:38.685Z", "type": "Single", "price": 100}}, {"model": "rooms.room", "pk": 2, "fields": {"updated_at": "2023-05-04T20:45:45.697Z", "created_at": "2023-05-04T20:45:45.697Z", "type": "Double", "price": 200}}, {"model": "rooms.room", "pk": 3, "fields": {"updated_at": "2023-05-04T20:45:52.165Z", "created_at": "2023-05-04T20:45:52.165Z", "type": "Triple", "price": 300}}, {"model": "rooms.room", "pk": 4, "fields": {"updated_at": "2023-05-04T20:45:59.853Z", "created_at": "2023-05-04T20:45:59.853Z", "type": "Quad", "price": 400}}, {"model": "rooms.room", "pk": 5, "fields": {"updated_at": "2023-05-04T20:46:05.920Z", "created_at": "2023-05-04T20:46:05.920Z", "type": "VIP", "price": 1000}}, {"model": "rooms.reservation", "pk": 1, "fields": {"updated_at": "2023-05-04T20:47:17.367Z", "created_at": "2023-05-04T20:47:17.367Z", "from_date": "2023-05-05", "to_date": "2023-05-11", "room": 1, "reservationist": "David", "phone": "091248362689"}}, {"model": "rooms.reservation", "pk": 2, "fields": {"updated_at": "2023-05-04T20:48:15.745Z", "created_at": "2023-05-04T20:48:15.745Z", "from_date": "2023-05-08", "to_date": "2023-05-10", "room": 2, "reservationist": "David", "phone": "091248362689"}}, {"model": "rooms.reservation", "pk": 3, "fields": {"updated_at": "2023-05-04T20:48:38.137Z", "created_at": "2023-05-04T20:48:38.137Z", "from_date": "2023-05-05", "to_date": "2023-05-05", "room": 3, "reservationist": "David", "phone": "091248362689"}}, {"model": "rooms.reservation", "pk": 4, "fields": {"updated_at": "2023-05-04T20:49:07.451Z", "created_at": "2023-05-04T20:49:07.451Z", "from_date": "2023-05-07", "to_date": "2023-05-08", "room": 4, "reservationist": "David", "phone": "091248362689"}}]
+[
+    {
+        "model": "rooms.room",
+        "pk": 1,
+        "fields": {
+            "updated_at": "2023-05-04T20:45:38.685Z",
+            "created_at": "2023-05-04T20:45:38.685Z",
+            "type": "Single",
+            "price": 100
+        }
+    },
+    {
+        "model": "rooms.room",
+        "pk": 2,
+        "fields": {
+            "updated_at": "2023-05-04T20:45:45.697Z",
+            "created_at": "2023-05-04T20:45:45.697Z",
+            "type": "Double",
+            "price": 200
+        }
+    },
+    {
+        "model": "rooms.room",
+        "pk": 3,
+        "fields": {
+            "updated_at": "2023-05-04T20:45:52.165Z",
+            "created_at": "2023-05-04T20:45:52.165Z",
+            "type": "Triple",
+            "price": 300
+        }
+    },
+    {
+        "model": "rooms.room",
+        "pk": 4,
+        "fields": {
+            "updated_at": "2023-05-04T20:45:59.853Z",
+            "created_at": "2023-05-04T20:45:59.853Z",
+            "type": "Quad",
+            "price": 400
+        }
+    },
+    {
+        "model": "rooms.room",
+        "pk": 5,
+        "fields": {
+            "updated_at": "2023-05-04T20:46:05.920Z",
+            "created_at": "2023-05-04T20:46:05.920Z",
+            "type": "VIP",
+            "price": 1000
+        }
+    },
+    {
+        "model": "rooms.reservation",
+        "pk": 1,
+        "fields": {
+            "updated_at": "2023-05-04T20:47:17.367Z",
+            "created_at": "2023-05-04T20:47:17.367Z",
+            "from_date": "2023-05-05",
+            "to_date": "2023-05-11",
+            "room": 4,
+            "reservationist": "David",
+            "phone": "091248362689"
+        }
+    },
+    {
+        "model": "rooms.reservation",
+        "pk": 2,
+        "fields": {
+            "updated_at": "2023-05-04T20:48:15.745Z",
+            "created_at": "2023-05-04T20:48:15.745Z",
+            "from_date": "2023-06-08",
+            "to_date": "2023-06-10",
+            "room": 4,
+            "reservationist": "David",
+            "phone": "091248362689"
+        }
+    },
+    {
+        "model": "rooms.reservation",
+        "pk": 3,
+        "fields": {
+            "updated_at": "2023-05-04T20:48:38.137Z",
+            "created_at": "2023-05-04T20:48:38.137Z",
+            "from_date": "2023-05-05",
+            "to_date": "2023-05-05",
+            "room": 5,
+            "reservationist": "David",
+            "phone": "091248362689"
+        }
+    },
+    {
+        "model": "rooms.reservation",
+        "pk": 4,
+        "fields": {
+            "updated_at": "2023-05-04T20:49:07.451Z",
+            "created_at": "2023-05-04T20:49:07.451Z",
+            "from_date": "2023-05-07",
+            "to_date": "2023-05-08",
+            "room": 5,
+            "reservationist": "David",
+            "phone": "091248362689"
+        }
+    }
+]
